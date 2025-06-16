@@ -595,7 +595,7 @@ Partial Class Form2
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Home"
+        Me.Text = "Main Form"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

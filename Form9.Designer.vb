@@ -23,7 +23,6 @@ Partial Class Form9
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -49,47 +48,33 @@ Partial Class Form9
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         CType(Me.IconPictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Navy
-        Me.Panel1.Controls.Add(Me.LinkLabel2)
-        Me.Panel1.Controls.Add(Me.LinkLabel1)
+        Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1361, 64)
+        Me.Panel1.Size = New System.Drawing.Size(1361, 99)
         Me.Panel1.TabIndex = 1
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.ForeColor = System.Drawing.Color.White
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(21, 11)
-        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(120, 32)
-        Me.LinkLabel1.TabIndex = 13
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Home"
-        Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(437, 0)
+        Me.Label4.Location = New System.Drawing.Point(434, 12)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(514, 63)
@@ -119,7 +104,7 @@ Partial Class Form9
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label7, 1, 1)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(16, 79)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(16, 106)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
@@ -344,7 +329,7 @@ Partial Class Form9
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.MY_PROJECT_TASK.My.Resources.Resources.brainstorming_team_concept_business_people_discussing_idea_board_meeting_office_teamwork_project_development_1016_14186
-        Me.PictureBox1.Location = New System.Drawing.Point(909, 78)
+        Me.PictureBox1.Location = New System.Drawing.Point(909, 105)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(440, 300)
@@ -361,10 +346,10 @@ Partial Class Form9
         Me.Panel3.Controls.Add(Me.Label9)
         Me.Panel3.Controls.Add(Me.Label29)
         Me.Panel3.Controls.Add(Me.Label32)
-        Me.Panel3.Location = New System.Drawing.Point(0, 386)
+        Me.Panel3.Location = New System.Drawing.Point(0, 414)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1365, 250)
+        Me.Panel3.Size = New System.Drawing.Size(1365, 235)
         Me.Panel3.TabIndex = 12
         '
         'Label13
@@ -422,7 +407,7 @@ Partial Class Form9
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label29.ForeColor = System.Drawing.Color.White
-        Me.Label29.Location = New System.Drawing.Point(16, 84)
+        Me.Label29.Location = New System.Drawing.Point(13, 61)
         Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(646, 155)
@@ -443,19 +428,15 @@ Partial Class Form9
         Me.Label32.Text = "About Project"
         Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'LinkLabel2
+        'PictureBox2
         '
-        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.ForeColor = System.Drawing.Color.White
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel2.Location = New System.Drawing.Point(1229, 11)
-        Me.LinkLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(120, 32)
-        Me.LinkLabel2.TabIndex = 14
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Exit"
-        Me.LinkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.PictureBox2.Image = Global.MY_PROJECT_TASK.My.Resources.Resources.imageedit_1_91417146311
+        Me.PictureBox2.Location = New System.Drawing.Point(16, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 93)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 6
+        Me.PictureBox2.TabStop = False
         '
         'Form9
         '
@@ -479,12 +460,12 @@ Partial Class Form9
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         CType(Me.IconPictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Label4 As Label
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Label1 As Label
@@ -510,5 +491,5 @@ Partial Class Form9
     Friend WithEvents Label5 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

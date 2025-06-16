@@ -15,10 +15,6 @@ Public Class Form3
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Application.Exit()
-    End Sub
-
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Me.Hide()
         Form2.Show()
     End Sub
@@ -79,5 +75,10 @@ Public Class Form3
         Dim x As String
         x = TextBox1.Text.Trim().ToString()
         EmployeeTableAdapter.FillBy(Me.Access_tables_for_projectDataSet.Employee, x, x)
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Me.Hide()
+        Form2.Show()
     End Sub
 End Class

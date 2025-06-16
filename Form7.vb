@@ -10,10 +10,6 @@
         Me.AttendanceTableAdapter.Fill(Me.Access_tables_for_projectDataSet.Attendance)
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-        Application.Exit()
-    End Sub
-
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Me.Hide()
         Form2.Show()
@@ -66,5 +62,10 @@
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         AttendanceBindingSource.MoveNext()
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Me.Hide()
+        Form2.Show()
     End Sub
 End Class

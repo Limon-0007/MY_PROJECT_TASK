@@ -30,7 +30,6 @@ Partial Class Form4
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form4))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -62,15 +61,12 @@ Partial Class Form4
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.PayrollBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.PayrollDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Payroll_idLabel = New System.Windows.Forms.Label()
         Employee_idLabel = New System.Windows.Forms.Label()
         SalaryLabel = New System.Windows.Forms.Label()
@@ -82,9 +78,8 @@ Partial Class Form4
         CType(Me.Access_tables_for_projectDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PayrollBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PayrollBindingNavigator.SuspendLayout()
-        Me.Panel3.SuspendLayout()
         CType(Me.PayrollDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Payroll_idLabel
@@ -133,8 +128,8 @@ Partial Class Form4
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.DodgerBlue
-        Me.Panel1.Controls.Add(Me.LinkLabel1)
+        Me.Panel1.BackColor = System.Drawing.Color.Navy
+        Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.DateTimePicker1)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -144,23 +139,9 @@ Partial Class Form4
         Me.Panel1.Size = New System.Drawing.Size(1404, 85)
         Me.Panel1.TabIndex = 0
         '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.ForeColor = System.Drawing.Color.White
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(15, 30)
-        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(120, 32)
-        Me.LinkLabel1.TabIndex = 15
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Home"
-        Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(981, 30)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(974, 32)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(396, 35)
@@ -171,7 +152,7 @@ Partial Class Form4
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(343, 16)
+        Me.Label4.Location = New System.Drawing.Point(337, 9)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(541, 63)
@@ -475,19 +456,6 @@ Partial Class Form4
         Me.PayrollBindingNavigatorSaveItem.Size = New System.Drawing.Size(46, 40)
         Me.PayrollBindingNavigatorSaveItem.Text = "Save Data"
         '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.Navy
-        Me.Panel3.Controls.Add(Me.IconPictureBox1)
-        Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Controls.Add(Me.ComboBox1)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(652, 85)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(752, 66)
-        Me.Panel3.TabIndex = 3
-        '
         'PayrollDataGridView
         '
         Me.PayrollDataGridView.AutoGenerateColumns = False
@@ -504,11 +472,11 @@ Partial Class Form4
         Me.PayrollDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.PayrollDataGridView.DataSource = Me.PayrollBindingSource
         Me.PayrollDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PayrollDataGridView.Location = New System.Drawing.Point(652, 151)
+        Me.PayrollDataGridView.Location = New System.Drawing.Point(652, 85)
         Me.PayrollDataGridView.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.PayrollDataGridView.Name = "PayrollDataGridView"
         Me.PayrollDataGridView.RowHeadersWidth = 62
-        Me.PayrollDataGridView.Size = New System.Drawing.Size(752, 660)
+        Me.PayrollDataGridView.Size = New System.Drawing.Size(752, 726)
         Me.PayrollDataGridView.TabIndex = 4
         '
         'DataGridViewTextBoxColumn2
@@ -547,46 +515,15 @@ Partial Class Form4
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.Width = 202
         '
-        'IconPictureBox1
+        'PictureBox2
         '
-        Me.IconPictureBox1.BackColor = System.Drawing.Color.Navy
-        Me.IconPictureBox1.ForeColor = System.Drawing.Color.Gold
-        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.HandPointRight
-        Me.IconPictureBox1.IconColor = System.Drawing.Color.Gold
-        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconPictureBox1.IconSize = 34
-        Me.IconPictureBox1.Location = New System.Drawing.Point(325, 14)
-        Me.IconPictureBox1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.IconPictureBox1.Name = "IconPictureBox1"
-        Me.IconPictureBox1.Size = New System.Drawing.Size(64, 34)
-        Me.IconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.IconPictureBox1.TabIndex = 9
-        Me.IconPictureBox1.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(389, 14)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 29)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Select:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.BackColor = System.Drawing.Color.White
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"CSE", "Chemistry", "Psycology", "History", "EEE"})
-        Me.ComboBox1.Location = New System.Drawing.Point(485, 12)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(240, 37)
-        Me.ComboBox1.TabIndex = 7
-        Me.ComboBox1.Text = "Department"
+        Me.PictureBox2.Image = Global.MY_PROJECT_TASK.My.Resources.Resources.imageedit_1_91417146311
+        Me.PictureBox2.Location = New System.Drawing.Point(21, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(88, 82)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.TabStop = False
         '
         'Form4
         '
@@ -595,7 +532,6 @@ Partial Class Form4
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1404, 811)
         Me.Controls.Add(Me.PayrollDataGridView)
-        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PayrollBindingNavigator)
@@ -613,10 +549,8 @@ Partial Class Form4
         CType(Me.PayrollBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PayrollBindingNavigator.ResumeLayout(False)
         Me.PayrollBindingNavigator.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
         CType(Me.PayrollDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -654,14 +588,10 @@ Partial Class Form4
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Panel3 As Panel
     Friend WithEvents PayrollDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

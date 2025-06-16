@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form6
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,22 +20,18 @@ Partial Class Form6
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim Stuff_idLabel As System.Windows.Forms.Label
         Dim Employee_idLabel As System.Windows.Forms.Label
         Dim RoleLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form6))
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -68,11 +64,11 @@ Partial Class Form6
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Stuff_idLabel = New System.Windows.Forms.Label()
         Employee_idLabel = New System.Windows.Forms.Label()
         RoleLabel = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,6 +77,7 @@ Partial Class Form6
         CType(Me.StaffBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StaffBindingNavigator.SuspendLayout()
         CType(Me.StaffDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Stuff_idLabel
@@ -118,69 +115,29 @@ Partial Class Form6
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.DodgerBlue
-        Me.Panel2.Controls.Add(Me.LinkLabel2)
-        Me.Panel2.Controls.Add(Me.LinkLabel1)
+        Me.Panel2.BackColor = System.Drawing.Color.Navy
+        Me.Panel2.Controls.Add(Me.IconPictureBox1)
+        Me.Panel2.Controls.Add(Me.PictureBox2)
+        Me.Panel2.Controls.Add(Me.TextBox1)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1425, 76)
+        Me.Panel2.Size = New System.Drawing.Size(1425, 97)
         Me.Panel2.TabIndex = 2
-        '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.ForeColor = System.Drawing.Color.White
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel2.Location = New System.Drawing.Point(1292, 20)
-        Me.LinkLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(120, 32)
-        Me.LinkLabel2.TabIndex = 15
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Exit"
-        Me.LinkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.ForeColor = System.Drawing.Color.White
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(9, 20)
-        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(120, 32)
-        Me.LinkLabel1.TabIndex = 14
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Home"
-        Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(500, 11)
+        Me.Label4.Location = New System.Drawing.Point(381, 9)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(483, 63)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Staff Management"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Navy
-        Me.Panel1.Controls.Add(Me.IconPictureBox1)
-        Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 76)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1425, 47)
-        Me.Panel1.TabIndex = 3
         '
         'IconPictureBox1
         '
@@ -190,37 +147,24 @@ Partial Class Form6
         Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass
         Me.IconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText
         Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconPictureBox1.IconSize = 35
-        Me.IconPictureBox1.Location = New System.Drawing.Point(1379, 5)
+        Me.IconPictureBox1.IconSize = 41
+        Me.IconPictureBox1.Location = New System.Drawing.Point(1361, 23)
         Me.IconPictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.IconPictureBox1.Name = "IconPictureBox1"
-        Me.IconPictureBox1.Size = New System.Drawing.Size(41, 35)
+        Me.IconPictureBox1.Size = New System.Drawing.Size(41, 42)
         Me.IconPictureBox1.TabIndex = 3
         Me.IconPictureBox1.TabStop = False
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(1000, 5)
+        Me.TextBox1.Location = New System.Drawing.Point(982, 23)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(420, 38)
+        Me.TextBox1.Size = New System.Drawing.Size(420, 42)
         Me.TextBox1.TabIndex = 2
         Me.TextBox1.Text = "Search"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.BackColor = System.Drawing.Color.White
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"CSE", "Chemistry", "Psycology", "History", "EEE"})
-        Me.ComboBox1.Location = New System.Drawing.Point(5, 2)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(277, 41)
-        Me.ComboBox1.TabIndex = 1
-        Me.ComboBox1.Text = "Department"
         '
         'Panel3
         '
@@ -239,10 +183,10 @@ Partial Class Form6
         Me.Panel3.Controls.Add(RoleLabel)
         Me.Panel3.Controls.Add(Me.RoleTextBox)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel3.Location = New System.Drawing.Point(0, 123)
+        Me.Panel3.Location = New System.Drawing.Point(0, 97)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(613, 767)
+        Me.Panel3.Size = New System.Drawing.Size(613, 793)
         Me.Panel3.TabIndex = 4
         '
         'Button7
@@ -508,24 +452,24 @@ Partial Class Form6
         '
         Me.StaffDataGridView.AutoGenerateColumns = False
         Me.StaffDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.StaffDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.StaffDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.StaffDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.StaffDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.StaffDataGridView.DataSource = Me.StaffBindingSource
         Me.StaffDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.StaffDataGridView.Location = New System.Drawing.Point(613, 123)
+        Me.StaffDataGridView.Location = New System.Drawing.Point(613, 97)
         Me.StaffDataGridView.Margin = New System.Windows.Forms.Padding(4)
         Me.StaffDataGridView.Name = "StaffDataGridView"
         Me.StaffDataGridView.RowHeadersWidth = 62
         Me.StaffDataGridView.RowTemplate.Height = 28
-        Me.StaffDataGridView.Size = New System.Drawing.Size(812, 767)
+        Me.StaffDataGridView.Size = New System.Drawing.Size(812, 793)
         Me.StaffDataGridView.TabIndex = 5
         '
         'DataGridViewTextBoxColumn2
@@ -552,6 +496,16 @@ Partial Class Form6
         Me.DataGridViewTextBoxColumn4.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.MY_PROJECT_TASK.My.Resources.Resources.imageedit_1_91417146311
+        Me.PictureBox2.Location = New System.Drawing.Point(38, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(92, 87)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.TabStop = False
+        '
         'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
@@ -561,7 +515,6 @@ Partial Class Form6
         Me.Controls.Add(Me.StaffDataGridView)
         Me.Controls.Add(Me.StaffBindingNavigator)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form6"
@@ -569,8 +522,6 @@ Partial Class Form6
         Me.Text = "Staff Management"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
@@ -581,6 +532,7 @@ Partial Class Form6
         Me.StaffBindingNavigator.ResumeLayout(False)
         Me.StaffBindingNavigator.PerformLayout()
         CType(Me.StaffDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -588,10 +540,8 @@ Partial Class Form6
 
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label4 As Label
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Access_tables_for_projectDataSet As access_tables_for_projectDataSet
     Friend WithEvents StaffBindingSource As BindingSource
@@ -624,6 +574,5 @@ Partial Class Form6
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

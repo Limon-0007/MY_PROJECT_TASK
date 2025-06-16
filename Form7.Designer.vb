@@ -28,11 +28,10 @@ Partial Class Form7
         Dim In_timeLabel As System.Windows.Forms.Label
         Dim Out_timeLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form7))
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Access_tables_for_projectDataSet = New MY_PROJECT_TASK.access_tables_for_projectDataSet()
         Me.AttendanceBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -72,13 +71,12 @@ Partial Class Form7
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
         Office_time_idLabel = New System.Windows.Forms.Label()
         Employee_idLabel = New System.Windows.Forms.Label()
         In_timeLabel = New System.Windows.Forms.Label()
         Out_timeLabel = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Access_tables_for_projectDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AttendanceBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AttendanceBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -133,37 +131,9 @@ Partial Class Form7
         Out_timeLabel.TabIndex = 14
         Out_timeLabel.Text = "Out Time:"
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel1.Controls.Add(Me.IconButton1)
-        Me.Panel1.Controls.Add(Me.DateTimePicker1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1469, 47)
-        Me.Panel1.TabIndex = 1
-        '
-        'IconButton1
-        '
-        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Receipt
-        Me.IconButton1.IconColor = System.Drawing.Color.Green
-        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.IconSize = 29
-        Me.IconButton1.Location = New System.Drawing.Point(661, 4)
-        Me.IconButton1.Margin = New System.Windows.Forms.Padding(4)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(184, 37)
-        Me.IconButton1.TabIndex = 5
-        Me.IconButton1.Text = "Report"
-        Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton1.UseVisualStyleBackColor = True
-        '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(4, 8)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(1067, 40)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(389, 35)
@@ -172,20 +142,32 @@ Partial Class Form7
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Navy
+        Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label4)
+        Me.Panel2.Controls.Add(Me.DateTimePicker1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 47)
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1469, 74)
+        Me.Panel2.Size = New System.Drawing.Size(1469, 104)
         Me.Panel2.TabIndex = 2
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.MY_PROJECT_TASK.My.Resources.Resources.imageedit_1_91417146311
+        Me.PictureBox2.Location = New System.Drawing.Point(28, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(98, 85)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.TabStop = False
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(452, 4)
+        Me.Label4.Location = New System.Drawing.Point(321, 17)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(650, 63)
@@ -335,14 +317,14 @@ Partial Class Form7
         'AttendanceDataGridView
         '
         Me.AttendanceDataGridView.AutoGenerateColumns = False
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.AttendanceDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.AttendanceDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.AttendanceDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.AttendanceDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.AttendanceDataGridView.DataSource = Me.AttendanceBindingSource
@@ -350,6 +332,7 @@ Partial Class Form7
         Me.AttendanceDataGridView.Location = New System.Drawing.Point(0, 567)
         Me.AttendanceDataGridView.Margin = New System.Windows.Forms.Padding(4)
         Me.AttendanceDataGridView.Name = "AttendanceDataGridView"
+        Me.AttendanceDataGridView.RowHeadersVisible = False
         Me.AttendanceDataGridView.RowHeadersWidth = 62
         Me.AttendanceDataGridView.RowTemplate.Height = 28
         Me.AttendanceDataGridView.Size = New System.Drawing.Size(1469, 469)
@@ -394,10 +377,10 @@ Partial Class Form7
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Controls.Add(Me.MonthCalendar1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel3.Location = New System.Drawing.Point(0, 121)
+        Me.Panel3.Location = New System.Drawing.Point(0, 104)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(431, 446)
+        Me.Panel3.Size = New System.Drawing.Size(431, 463)
         Me.Panel3.TabIndex = 4
         '
         'Label1
@@ -425,10 +408,10 @@ Partial Class Form7
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.PictureBox1)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(1191, 121)
+        Me.Panel4.Location = New System.Drawing.Point(1191, 104)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(278, 446)
+        Me.Panel4.Size = New System.Drawing.Size(278, 463)
         Me.Panel4.TabIndex = 5
         '
         'PictureBox1
@@ -487,10 +470,10 @@ Partial Class Form7
         Me.Button7.BackColor = System.Drawing.Color.Black
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(633, 488)
+        Me.Button7.Location = New System.Drawing.Point(694, 489)
         Me.Button7.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(163, 68)
+        Me.Button7.Size = New System.Drawing.Size(243, 68)
         Me.Button7.TabIndex = 21
         Me.Button7.Text = "Home"
         Me.Button7.UseVisualStyleBackColor = False
@@ -500,10 +483,10 @@ Partial Class Form7
         Me.Button6.BackColor = System.Drawing.Color.Navy
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(807, 488)
+        Me.Button6.Location = New System.Drawing.Point(948, 489)
         Me.Button6.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(180, 68)
+        Me.Button6.Size = New System.Drawing.Size(230, 68)
         Me.Button6.TabIndex = 20
         Me.Button6.Text = "Next"
         Me.Button6.UseVisualStyleBackColor = False
@@ -568,23 +551,10 @@ Partial Class Form7
         Me.Button1.Location = New System.Drawing.Point(437, 488)
         Me.Button1.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(191, 68)
+        Me.Button1.Size = New System.Drawing.Size(247, 68)
         Me.Button1.TabIndex = 22
         Me.Button1.Text = "Previous"
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.Maroon
-        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.White
-        Me.Button8.Location = New System.Drawing.Point(997, 488)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(181, 68)
-        Me.Button8.TabIndex = 23
-        Me.Button8.Text = "Exit"
-        Me.Button8.UseVisualStyleBackColor = False
         '
         'Form7
         '
@@ -592,7 +562,6 @@ Partial Class Form7
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1469, 1036)
-        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
@@ -613,14 +582,13 @@ Partial Class Form7
         Me.Controls.Add(Me.AttendanceDataGridView)
         Me.Controls.Add(Me.AttendanceBindingNavigator)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form7"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Attendance Management"
-        Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Access_tables_for_projectDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AttendanceBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AttendanceBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
@@ -635,9 +603,6 @@ Partial Class Form7
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Access_tables_for_projectDataSet As access_tables_for_projectDataSet
@@ -674,10 +639,10 @@ Partial Class Form7
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button8 As Button
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents Label4 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

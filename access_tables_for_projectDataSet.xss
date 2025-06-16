@@ -9,9 +9,9 @@
     <Shape ID="DesignTable:Attendance" ZOrder="6" X="70" Y="70" Height="300" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="217" />
     <Shape ID="DesignTable:Department" ZOrder="5" X="440" Y="70" Height="300" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="182" />
     <Shape ID="DesignTable:Emp_Login" ZOrder="4" X="810" Y="70" Height="300" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="182" />
-    <Shape ID="DesignTable:Employee" ZOrder="3" X="1180" Y="70" Height="475" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="357" />
-    <Shape ID="DesignTable:Payroll" ZOrder="2" X="1550" Y="70" Height="300" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="217" />
-    <Shape ID="DesignTable:Staff" ZOrder="1" X="1920" Y="70" Height="300" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="182" />
+    <Shape ID="DesignTable:Employee" ZOrder="3" X="211" Y="498" Height="475" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="357" />
+    <Shape ID="DesignTable:Payroll" ZOrder="2" X="702" Y="668" Height="300" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="217" />
+    <Shape ID="DesignTable:Staff" ZOrder="1" X="1209" Y="99" Height="300" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="182" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

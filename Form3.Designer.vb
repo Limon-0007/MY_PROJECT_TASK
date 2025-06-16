@@ -42,7 +42,6 @@ Partial Class Form3
         Me.Hire_dateDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.DepartmentTextBox = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -70,6 +69,7 @@ Partial Class Form3
         Me.Label1 = New System.Windows.Forms.Label()
         Me.EmployeeTableAdapter = New MY_PROJECT_TASK.access_tables_for_projectDataSetTableAdapters.EmployeeTableAdapter()
         Me.TableAdapterManager = New MY_PROJECT_TASK.access_tables_for_projectDataSetTableAdapters.TableAdapterManager()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Employee_idLabel = New System.Windows.Forms.Label()
         First_nameLabel = New System.Windows.Forms.Label()
         Last_nameLabel = New System.Windows.Forms.Label()
@@ -86,6 +86,7 @@ Partial Class Form3
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Employee_idLabel
@@ -276,30 +277,15 @@ Partial Class Form3
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel1.Controls.Add(Me.LinkLabel1)
+        Me.Panel1.BackColor = System.Drawing.Color.Navy
+        Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.DateTimePicker1)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1347, 89)
+        Me.Panel1.Size = New System.Drawing.Size(1347, 93)
         Me.Panel1.TabIndex = 19
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.ForeColor = System.Drawing.Color.White
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(20, 32)
-        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(120, 32)
-        Me.LinkLabel1.TabIndex = 14
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Home"
-        Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'DateTimePicker1
         '
@@ -347,7 +333,7 @@ Partial Class Form3
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(158, 68)
         Me.Button7.TabIndex = 6
-        Me.Button7.Text = "Exit"
+        Me.Button7.Text = "Home"
         Me.Button7.UseVisualStyleBackColor = False
         '
         'Button6
@@ -589,6 +575,16 @@ Partial Class Form3
         Me.TableAdapterManager.StaffTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = MY_PROJECT_TASK.access_tables_for_projectDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.MY_PROJECT_TASK.My.Resources.Resources.imageedit_1_91417146311
+        Me.PictureBox2.Location = New System.Drawing.Point(45, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(95, 81)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
@@ -631,6 +627,7 @@ Partial Class Form3
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -659,7 +656,6 @@ Partial Class Form3
     Friend WithEvents Button7 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents EmployeeDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
@@ -674,4 +670,5 @@ Partial Class Form3
     Friend WithEvents Label1 As Label
     Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

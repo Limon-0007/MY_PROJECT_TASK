@@ -63,17 +63,14 @@ Public Class Form6
         StaffBindingSource.AddNew()
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Me.Hide()
-        Form2.Show()
-    End Sub
-    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
-        Application.Exit()
-    End Sub
-
     Private Sub IconPictureBox1_Click(sender As Object, e As EventArgs) Handles IconPictureBox1.Click
         Dim x As String
         x = TextBox1.Text.Trim().ToString()
         StaffTableAdapter.FillBy(Me.Access_tables_for_projectDataSet.Staff, x)
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Me.Hide()
+        Form2.Show()
     End Sub
 End Class
